@@ -1,0 +1,11 @@
+SELECT name, 
+ROUND(AVG(rating)) AS avg_rating,
+ROUND(AVG(fat)) AS avg_fats,
+ROUND(AVG(sodium)) AS avg_sodium,
+ROUND(AVG(fibre)) AS avg_fibre,
+ROUND(AVG(carbo)) AS avg_carbo, 
+ROUND(AVG(sugars)) avg_sugars,
+ROUND(AVG(potass)) AS avg_potass
+FROM _80_cereal
+GROUP BY name
+ORDER BY avg_rating ASC
