@@ -1,0 +1,5 @@
+SELECT name, 
+calories * weight AS cals_per_oz
+FROM _80_cereal 
+GROUP BY name 
+ORDER BY cals_per_oz DESC
